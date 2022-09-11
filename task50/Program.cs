@@ -31,16 +31,14 @@ void FillArray (int [,] matr)
     }
 }
 int [,] matrix = new int [3,4]; /// размерность массива 
-//PrintArray(matrix);
-//Console.WriteLine();
-
+FillArray(matrix);
+PrintArray(matrix);
 
 Console.Write("Введите позицию по строке: \t");
 int row = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите позицию по столбцу: \t");
 int collum = Convert.ToInt32(Console.ReadLine());
-FillArray(matrix);
-PrintArray(matrix);
+
 
 string CheckElement(int row, int collum, int[,] matrix)
 {
